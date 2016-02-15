@@ -1,0 +1,14 @@
+{
+  "name": "my-fractal-project",
+  "version": "0.1.0",
+  "description": "My new Fractal-powerer poject",
+  "dependencies": {
+    "@frctl/fractal": "^0.5.1"
+  },
+  "private": true,
+  "scripts": {
+    "start": "fractal start",
+    "build": "fractal build",
+    "fractal": "fractal"
+  }
+}
