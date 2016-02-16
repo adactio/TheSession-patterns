@@ -1,0 +1,29 @@
+.gallery-item {
+    list-style: none;
+}
+@media all and (min-width: 48em) {
+    .gallery {
+        display: table;
+        width: 100%;
+        .gallery-item {
+            display: table-cell;
+            text-align: center;
+        }
+        .gallery-item:first-child {
+            text-align: left;
+            .photo {
+                @include rotate(-6deg);
+            }
+        }
+        .gallery-item:last-child {
+            text-align: right;
+            .photo {
+                @include rotate(6deg);
+            }
+        }
+        .gallery-item,
+        .gallery-item img {
+            max-width: 100%;
+        }
+    }
+}

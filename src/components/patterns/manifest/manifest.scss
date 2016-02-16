@@ -1,0 +1,46 @@
+.manifest {
+    @include constrain;
+}
+.manifest-title {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.manifest-inventory {
+    border-top: 0.0625em solid rgba(0,0,0,0.025);
+    margin-top: 0;
+    padding-top: 0;
+}
+ul.manifest-inventory > li {
+    list-style: none;
+}
+.manifest-item {
+    vertical-align: text-top;
+    margin: 0;
+    padding-top: 1.0625em;
+    padding-bottom: 1em;
+    border-bottom: 0.0625em solid rgba(0,0,0,0.025);
+    &:hover {
+        background-color: rgba(0,0,0,0.02);
+        border-bottom-color: rgba(0,0,0,0.01);
+    }
+}
+.manifest-item-title {
+    @include font-size(20);
+    line-height: 1.2;
+}
+.manifest-item-title b {
+    font-weight: normal;
+}
+.manifest-item-extra {
+    white-space: pre;
+}
+.manifest-meta {
+    display: block;
+    margin-top: 0.5em;
+    color: #630;
+}
+.manifest-meta a:link,
+.manifest-meta a:visited {
+    color: #c30;
+}

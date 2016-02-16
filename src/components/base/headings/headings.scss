@@ -1,0 +1,34 @@
+h1,h2,h3,h4,h5,h6 {
+	color: #630;
+	color: rgba(102,51,0,0.9);
+	font-weight: normal;
+	line-height: 1.25;
+	border-bottom-style: solid;
+	border-bottom-color: #efead1;
+	border-bottom-color: rgba(102,51,0,0.1);
+	word-wrap: break-word;
+}
+h1 {
+	@include font-size(32);
+	border-bottom-width: 0.09375em;
+}
+h2 {
+	@include font-size(24);
+	border-bottom-width: 0.0833em;
+}
+h3 {
+	@include font-size(20);
+	border-bottom-width: 0.05em;
+}
+h4 {
+	@include font-size(18);
+}
+h5 {
+	@include font-size(17);
+}
+h6 {
+	@include font-size(16);
+}
+article h2 {
+	padding-top: 1em;
+}

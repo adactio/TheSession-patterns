@@ -1,0 +1,101 @@
+[role="search"] {
+    margin-bottom: 2em;
+    label {
+        display: block;
+        @include font-size(20);
+        vertical-align: middle;
+    }
+    select {
+        padding: 0.4em 0.2em;
+    }
+    input[type="search"] {
+        display: inline-block;
+        padding: 0.4em 0.2em;
+        width: 65%;
+        max-width: 50em;
+        -webkit-appearance: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    button {
+        display: inline-block;
+        width: 30%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-left: -0.3125em;
+        border-color: #960;
+        border-top-color: #c93;
+        background-color: #fc3;
+        color: #630;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.25);
+        &:hover,
+        &:focus {
+            background-color: #eb2;
+        }
+        &:active {
+            background-color: #c90;
+            border-color: #c90;
+        }
+    }
+    select, input, button {
+        vertical-align: top;
+        height: 35px;
+        height: 2.1875em;
+        box-sizing: border-box;
+    }
+}
+[role="search"][action*="recordings"] input[type="search"],
+[role="search"][action*="sessions"] input[type="search"],
+[role="search"][action*="events"] input[type="search"] {
+        text-transform: capitalize;
+}
+@media all and (max-width: 20em) {
+    [role="search"] select {
+        width: 95%;
+    }
+}
+
+@media all and (min-width: 46em) {
+	[role="search"] {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        align-items: center;
+        label {
+            margin-right: 0.25em;
+        }
+        input + label,
+        select + label {
+            margin-left: 0.25em;
+        }
+		input[type="search"] {
+            width: auto;
+            -webkit-flex-grow: 1;
+            flex-grow: 1;
+		}
+        button {
+            width: auto;
+        }
+	}
+}
+
+@media all and (min-width: 56em) {
+    [role="search"] > label:first-child + input[type="search"] + button {
+        min-width: 13.25em;
+    }
+}
+@media all and (min-width: 72em) {
+    [role="search"] button {
+        min-width: 13.25em;
+    }
+}
+
+@media all and (min-width: 56em) and (min-height: 44em) {
+    [role="search"] {
+        select, input, button {
+            height: 45px;
+            height: 2.8125em;
+        }
+    }
+}

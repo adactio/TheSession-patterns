@@ -1,0 +1,13 @@
+ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+ol {
+	margin-left: 2em;
+	padding-left: 0;
+}
+@media all and (min-width: 40em) {
+	ol {
+		margin-left: 0;
+	}
+}

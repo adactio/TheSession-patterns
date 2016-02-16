@@ -1,0 +1,16 @@
+.info {
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.0125);
+    padding: 1em;
+    margin: 1em 0;
+    border: 0.1875em double rgba(0,0,0,0.05);
+    border-radius: 0.125em;
+    box-sizing: border-box;
+    ul {
+        margin: 0;
+    }
+    li {
+        margin-left: 1em;
+    }
+}

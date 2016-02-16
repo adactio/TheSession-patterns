@@ -1,0 +1,22 @@
+.feedback {
+    @include constrain;
+    display: block;
+    padding: 0.25em 1em;
+    background-color: #fc3;
+    color: #300;
+    color: rgba(0,0,0,0.8);
+    box-shadow: inset 0 0 1em rgba(0,0,0,0.1);
+    border: 0.1875em double rgba(0,0,0,0.1);
+    border-radius: 0.125em;
+    box-sizing: border-box;
+    ul,ol {
+        margin-left: 1em;
+    }
+}
+.error {
+    background-color: #c00;
+    color: #ffc;
+}
+.success {
+    background-color: #cf9;
+}

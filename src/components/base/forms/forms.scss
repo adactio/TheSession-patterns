@@ -1,0 +1,116 @@
+[placeholder]::-webkit-input-placeholder {
+    text-transform: none;
+}
+[placeholder]::-moz-placeholder {
+    text-transform: none;
+}
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+legend {
+	text-indent: 0;
+	margin: 0;
+	padding: 0;
+	@include font-size(24);
+}
+textarea {
+	line-height: 1.5;
+}
+input,
+textarea,
+select,
+button {
+	padding: 0.1875em 0;
+	background-color: $light;
+	background-color: rgba(255,255,255,0.5);
+	color: $dark;
+	font-family: inherit;
+	@include font-size(16);
+	border: {
+		width: 0.0625em;
+		style: solid;
+		color: rgba(0,0,0,0.25);
+	}
+	border-radius: 0.25em;
+	@include transition (all, 0.1s, linear);
+	&:focus {
+		outline: none;
+		border-color: rgba(0,0,0,0.75);
+		box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.25);
+	}
+}
+input,
+textarea,
+select {
+	&:required {
+		border-color: rgba(0,0,0,0.5);
+	}
+	&:hover {
+		border-color: rgba(0,0,0,0.75);
+	}
+}
+input[type="number"] {
+	width: 4em;
+	text-align: right;
+}
+
+form[method="post"] {
+	label {
+		display: block;
+        cursor: inherit;
+	}
+	input,
+	textarea {
+		width: 100%;
+		max-width: 50em;
+		box-sizing: border-box;
+	}
+	input[type="radio"],
+	input[type="checkbox"],
+	input[type="submit"],
+	input[type="date"],
+	input[type="datetime"] {
+		width: auto;
+	}
+	input[type="number"] {
+		width: 5em;
+		text-align: left;
+	}
+	input:invalid:focus,
+	textarea:invalid:focus,
+	select:invalid:focus {
+		border-color: rgba(102,0,0,0.5);
+	}
+	input:invalid:hover,
+	textarea:invalid:hover,
+	select:invalid:hover {
+		border-color: rgba(102,0,0,0.75);
+	}
+	input:valid:focus,
+	textarea:valid:focus,
+	select:valid:focus {
+		border-color: rgba(0,102,0,0.5);
+	}
+	input:valid:hover,
+	textarea:valid:hover,
+	select:valid:hover {
+		border-color: rgba(0,102,0,0.75);
+	}
+	input[type="submit"]:valid,
+	input[type="submit"]:invalid {
+		border-color: #930;
+	}
+}
+
+@media all and (max-width: 20em) {
+    form[method="post"] {
+        select,
+        button,
+        input[type="submit"] {
+            width: 100%;
+            margin: 0.125em 0;
+        }
+    }
+}
