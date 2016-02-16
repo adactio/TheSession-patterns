@@ -1,7 +1,7 @@
 {
-  "name": "my-fractal-project",
+  "name": "the-session",
   "version": "0.1.0",
-  "description": "My new Fractal-powerer poject",
+  "description": "Pattern library for thesession.org",
   "dependencies": {
     "@frctl/fractal": "^0.5.1"
   },
