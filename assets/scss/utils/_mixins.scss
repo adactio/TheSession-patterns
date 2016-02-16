@@ -1,0 +1,116 @@
+@mixin font-size($size, $base: 16) {
+	font-size: $size + px;
+	font-size: ($size/$base) + em;
+}
+@mixin constrain($width: $maxwidth, $base: 16) {
+    max-width: $width + px;
+    max-width: ($width/$base) + em;
+}
+@mixin button($button-color) {
+	background-color: $button-color;
+	border-color: darken($button-color,15%);
+	border-bottom-color: darken($button-color,20%);
+	border-top-color: $button-color;
+	&:link,
+	&:visited {
+		background-color: $button-color;
+	}
+	&:hover,
+	&:focus {
+		background-color: darken($button-color,5%);
+		border-color: darken($button-color,20%);
+		border-bottom-color: darken($button-color,25%);
+		border-top-color: darken($button-color,5%);
+	}
+	&:active {
+		background-color: darken($button-color,10%);
+		border-color: darken($button-color,10%);
+	}
+}
+@mixin transition($property, $duration, $type: linear) {
+	@if ($property == 'box-shadow') {
+		-webkit-transition: -webkit-box-shadow $duration $type;
+	} @elseif ($property == 'transform') {
+		-webkit-transition: -webkit-transform $duration $type;
+	} @elseif ($property == 'border-radius') {
+		-webkit-transition: -webkit-border-radius $duration $type;
+	} @else {
+		-webkit-transition: $property $duration $type;
+	}
+	transition: $property $duration $type;
+}
+@mixin gradient($from, $to) {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0,$from), color-stop(1,$to));
+	background-image: -webkit-linear-gradient($from,$to);
+	background-image: linear-gradient($from,$to);
+}
+@mixin rotate($angle, $axis: none) {
+	-webkit-backface-visibility: hidden;
+	@if ($axis == 'y') {
+		-webkit-transform: rotateY($angle);
+		transform: rotateY($angle);
+	} @elseif ($axis == 'x') {
+		-webkit-transform: rotateX($angle);
+		transform: rotateX($angle);
+	} @else {
+		-webkit-transform: rotate($angle);
+		transform: rotate($angle);
+	}
+}
+@mixin slide($distance, $direction: x) {
+	@if ($direction == 'y') {
+		-webkit-transform: translateY($distance);
+		transform: translateY($distance);
+	} @elseif ($direction == 'x') {
+		-webkit-transform: translateX($distance);
+		transform: tanslateX($distance);
+	}
+}
+@mixin scale($amount) {
+	-webkit-transform: scale($amount);
+	transform: scale($amount);
+}
+@mixin animate($name, $duration: 1s, $iteration: infinite, $direction: alternate) {
+	-webkit-animation-name: $name;
+	-webkit-animation-duration: $duration;
+	-webkit-animation-iteration-count: $iteration;
+	-webkit-animation-direction: $direction;
+	animation-name: $name;
+	animation-duration: $duration;
+	animation-iteration-count: $iteration;
+	animation-direction: $direction;
+}
+@mixin animationkeyframes($name, $property, $from, $to) {
+	@-webkit-keyframes #{$name} {
+		from {
+			@if ($property == 'box-shadow') {
+				-webkit-box-shadow: $from;
+			} @elseif ($property == 'transform') {
+				-webkit-transform: $from;
+			} @elseif ($property == 'transition') {
+				-webkit-transition: $from;
+			} @else {
+				#{$property}: $from;
+			}
+		}
+		to {
+			@if ($property == 'box-shadow') {
+				-webkit-box-shadow: $to;
+			} @elseif ($property == 'transform') {
+				-webkit-transform: $to;
+			} @elseif ($property == 'transition') {
+				-webkit-transition: $to;
+			} @else {
+				#{$property}: $to;
+			}
+		}
+	}
+	@keyframes #{$name} {
+		from {
+			#{$property}: $from;
+		}
+		to {
+			#{$property}: $to;
+		}
+	}
+}
