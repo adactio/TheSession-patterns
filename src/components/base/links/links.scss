@@ -24,3 +24,9 @@ h2 a:link,
 h2 a:visited {
 	color: #900;
 }
+a[rel="prev"]:before {
+    content: '« ';
+}
+a[rel="next"]:before {
+    content: '» ';
+}

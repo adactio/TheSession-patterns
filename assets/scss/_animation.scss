@@ -1,0 +1,24 @@
+[placeholder]:focus::-webkit-input-placeholder {
+    -webkit-transition: color 0.75s;
+    color: transparent;
+}
+[placeholder]:focus::-moz-placeholder {
+    transition: color 0.75s;
+    color: transparent;
+}
+
+@include animationkeyframes(pulse, box-shadow, 0 0 0 rgba(0,0,0,0), 0 0 1em rgba(0,0,0,1));
+.pulse {
+    @include animate(pulse, 2s);
+}
+
+@include animationkeyframes(targetfade, background-color, rgba(255,204,51,0.25), rgba(255,204,51,0));
+[role="main"] :target {
+    @include animate(targetfade, 3s, 1);
+}
+
+@include animationkeyframes(swingdown, transform, perspective(100vh) rotate3d(1, 0, 0, -90deg), perspective(100vh));
+.toggle-input:checked + .toggle-content {
+    transform-origin: center top;
+    @include animate(swingdown, 0.15s, 1, normal);
+}

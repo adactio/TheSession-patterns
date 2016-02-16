@@ -1,0 +1,21 @@
+html,body {
+	background-color: $light;
+}
+body {
+	color: $dark;
+	color: rgba(44,0,0,0.96);
+	font-family: Georgia, serif;
+	line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
+}
+mark {
+	background-color: rgba(255,204,0,0.5);
+}
+figure {
+	display: inline-block;
+	text-align: center;
+	margin: 0 0 1em;
+}
+a, button, input, textarea, select, label, summary {
+    touch-action: manipulation;
+}

@@ -1,0 +1,24 @@
+.discrete {
+    @include font-size(13);
+}
+small.discrete {
+    font-style: italic;
+}
+.detail {
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+.aside {
+    float: right;
+}
+.prose {
+    @include constrain;
+    overflow: hidden;
+}
+.draggable {
+    cursor: move;
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2244%22%20height%3D%2232%22%20viewBox%3D%220%200%2044%2032%22%3E%3Cpath%20fill%3D%22%23c96%22%20d%3D%22M0%206h28v6H0V6zm0%208h28v6H0v-6zm0%208h28v6H0v-6zM31%2018l6%206%206-6zM43%2016l-6-6-6%206z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 44px;
+}

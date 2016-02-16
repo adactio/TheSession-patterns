@@ -1,3 +1,154 @@
+@charset "UTF-8";
+html, body {
+  background-color: #ffffe9;
+}
+
+body {
+  color: #270000;
+  color: rgba(44, 0, 0, 0.96);
+  font-family: Georgia, serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+mark {
+  background-color: rgba(255, 204, 0, 0.5);
+}
+
+figure {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0 1em;
+}
+
+a, button, input, textarea, select, label, summary {
+  touch-action: manipulation;
+}
+
+.discrete {
+  font-size: 13px;
+  font-size: 0.8125em;
+}
+
+small.discrete {
+  font-style: italic;
+}
+
+.detail {
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+
+.aside {
+  float: right;
+}
+
+.prose {
+  max-width: 800px;
+  max-width: 50em;
+  overflow: hidden;
+}
+
+.draggable {
+  cursor: move;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2244%22%20height%3D%2232%22%20viewBox%3D%220%200%2044%2032%22%3E%3Cpath%20fill%3D%22%23c96%22%20d%3D%22M0%206h28v6H0V6zm0%208h28v6H0v-6zm0%208h28v6H0v-6zM31%2018l6%206%206-6zM43%2016l-6-6-6%206z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 44px;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  -webkit-transition: color 0.75s;
+  color: transparent;
+}
+
+[placeholder]:focus::-moz-placeholder {
+  transition: color 0.75s;
+  color: transparent;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-box-shadow: 0 0 0 transparent;
+  }
+  to {
+    -webkit-box-shadow: 0 0 1em black;
+  }
+}
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 transparent;
+  }
+  to {
+    box-shadow: 0 0 1em black;
+  }
+}
+.pulse {
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes targetfade {
+  from {
+    background-color: rgba(255, 204, 51, 0.25);
+  }
+  to {
+    background-color: rgba(255, 204, 51, 0);
+  }
+}
+@keyframes targetfade {
+  from {
+    background-color: rgba(255, 204, 51, 0.25);
+  }
+  to {
+    background-color: rgba(255, 204, 51, 0);
+  }
+}
+[role="main"] :target {
+  -webkit-animation-name: targetfade;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+  animation-name: targetfade;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes swingdown {
+  from {
+    -webkit-transform: perspective(100vh) rotate3d(1, 0, 0, -90deg);
+  }
+  to {
+    -webkit-transform: perspective(100vh);
+  }
+}
+@keyframes swingdown {
+  from {
+    transform: perspective(100vh) rotate3d(1, 0, 0, -90deg);
+  }
+  to {
+    transform: perspective(100vh);
+  }
+}
+.toggle-input:checked + .toggle-content {
+  transform-origin: center top;
+  -webkit-animation-name: swingdown;
+  -webkit-animation-duration: 0.15s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  animation-name: swingdown;
+  animation-duration: 0.15s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
 /* generated with grunt-sass-globbing */
 [placeholder]::-webkit-input-placeholder {
   text-transform: none;
@@ -203,6 +354,14 @@ h2 a:visited {
   color: #900;
 }
 
+a[rel="prev"]:before {
+  content: '« ';
+}
+
+a[rel="next"]:before {
+  content: '» ';
+}
+
 ul {
   margin-left: 0;
   padding-left: 0;
@@ -366,6 +525,7 @@ button.link:focus {
   width: 1em;
   height: 1em;
   display: inline-block;
+  float: right;
   speak: none;
   margin-left: 0.375em;
   margin-right: -0.375em;
