@@ -1,0 +1,5 @@
+{{#if textarea}}
+<textarea rows="10" cols="30"{{#if name}} name="{{ name }}"{{/if}}{{#if id}} id="{{ id }}"{{/if}}{{#if required}} required{{/if}}{{#if class}} class="{{ class }}"{{/if}}{{#if placeholder}}{{/if}}{{#if title}} title="{{ title }}"{{/if}}>{{ value }}</textarea>
+{{else}}
+<input{{#if type}} type="{{ type }}"{{else}} type="text"{{/if}}{{#if name}} name="{{ name }}"{{/if}}{{#if id}} id="{{ id }}"{{/if}}{{#if required}} required{{/if}}{{#if class}} class="{{ class }}"{{/if}}{{#if placeholder}} placeholder="{{ placeholder }}"{{/if}}{{#if title}} title="{{ title }}"{{/if}}{{#if value}} value="{{ value }}"{{/if}}>
+{{/if}}

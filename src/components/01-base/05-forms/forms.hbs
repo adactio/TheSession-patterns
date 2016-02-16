@@ -1,14 +1,6 @@
 <form method="post" action="">
-<p>
-<label for="field1">Text input</label>
-<input id="field1" name="field1" type="text">
-</p>
-<p>
-<label for="field2">Textarea</label>
-<textarea id="field2" name="field2" rows="10" cols="30"></textarea>
-</p>
-<p><label for="field3">Email input</label>
-<input id="field3" name="field3" type="email" placeholder="e.g. email@example.com" required>
-</p>
+<p>{{> @form-unit id="field1" name="field1" label="Text input" }}</p>
+<p>{{> @form-unit textarea=true id="field2" name="field2" label="Textarea" }}</p>
+<p>{{> @form-unit id="field3" name="field3" label="Email input" required="true" placeholder="e.g. email@example.com" }}</p>
 <input type="submit" value="Submit">
 </form>

@@ -1,0 +1,11 @@
+<li class="manifest-item">
+{{#if title}}
+<a href="#"><span class="manifest-item-title">{{ title }}{{#if detail}} <span class="detail">{{ detail }}</span>{{/if}}</span></a>
+{{/if}}
+{{ content }}
+{{#if meta}}
+<small class="manifest-meta discrete">
+{{ meta }}
+</small><!-- /.manifest-meta.discrete -->
+{{/if}}
+</li><!-- /.manifest-item -->

@@ -11,7 +11,7 @@ fractal.set('components.path', 'src/components');
 /*
  * Tell Fractal where to look for documentation pages.
  */
-fractal.set('pages.path', 'src/docs');
+fractal.set('docs.path', 'src/docs');
 
 /*
  * Tell Fractal which file to use for rendering previews of patterns.
