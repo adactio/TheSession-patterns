@@ -796,6 +796,38 @@ a:hover .photo {
   padding-top: 2em;
 }
 
+.ribbon {
+  font-size: 16px;
+  font-size: 1em;
+  display: block;
+  margin: 0;
+  padding: 0.5em;
+  color: #300;
+  color: rgba(51, 0, 0, 0.9);
+  background-color: #e5b219;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eb2), color-stop(1, #da1));
+  background-image: -webkit-linear-gradient(#eb2, #da1);
+  background-image: linear-gradient(#eb2, #da1);
+  border: 0.0625em dashed #c93;
+  box-shadow: 0.25em 0.25em 0 #e5b219, -0.25em 0.25em 0 #e5b219, -0.25em -0.25em 0 #e5b219, 0.25em -0.25em 0 #e5b219;
+}
+
+a.ribbon,
+a.ribbon:link,
+a.ribbon:visited,
+a.ribbon:hover,
+a.ribbon:focus,
+a.ribbon:active {
+  color: #300;
+  color: rgba(51, 0, 0, 0.9);
+  text-decoration: none;
+}
+
+@media print {
+  .ribbon {
+    border: none;
+  }
+}
 .gallery-item {
   list-style: none;
 }

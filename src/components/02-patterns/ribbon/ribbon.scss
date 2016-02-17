@@ -1,0 +1,28 @@
+.ribbon {
+    @include font-size(16);
+    display: block;
+    margin: 0;
+    padding: 0.5em;
+    color: #300;
+    color: rgba(51,0,0,0.9);
+    background-color: #e5b219;
+    @include gradient(#eb2,#da1);
+    border: 0.0625em dashed #c93;
+    box-shadow: 0.25em 0.25em 0 #e5b219, -0.25em 0.25em 0 #e5b219, -0.25em -0.25em 0 #e5b219, 0.25em -0.25em 0 #e5b219;
+}
+a.ribbon,
+a.ribbon:link,
+a.ribbon:visited,
+a.ribbon:hover,
+a.ribbon:focus,
+a.ribbon:active  {
+    color: #300;
+    color: rgba(51,0,0,0.9);
+    text-decoration: none;
+}
+
+@media print {
+    .ribbon {
+        border: none;
+    }
+}
