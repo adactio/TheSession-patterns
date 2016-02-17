@@ -239,33 +239,6 @@ article h2 {
   padding-top: 1em;
 }
 
-ul {
-  margin-left: 0;
-  padding-left: 0;
-}
-
-ol {
-  margin-left: 2em;
-  padding-left: 0;
-}
-
-@media all and (min-width: 40em) {
-  ol {
-    margin-left: 0;
-  }
-}
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th, td {
-  text-align: left;
-  padding: 0.25em 0.5em;
-  border: none;
-  vertical-align: text-top;
-}
-
 [placeholder]::-webkit-input-placeholder {
   text-transform: none;
 }
@@ -389,6 +362,33 @@ form[method="post"] input[type="submit"]:invalid {
     margin: 0.125em 0;
   }
 }
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ol {
+  margin-left: 2em;
+  padding-left: 0;
+}
+
+@media all and (min-width: 40em) {
+  ol {
+    margin-left: 0;
+  }
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.25em 0.5em;
+  border: none;
+  vertical-align: text-top;
+}
+
 button,
 input[type="submit"],
 .button {
