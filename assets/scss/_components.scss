@@ -1,15 +1,14 @@
 /* generated with grunt-sass-globbing */
 
-@import "../../src/components/base/forms/forms";
-@import "../../src/components/base/headings/headings";
-@import "../../src/components/base/links/links";
-@import "../../src/components/base/lists/lists";
-@import "../../src/components/base/tables/tables";
-@import "../../src/components/patterns/buttons/buttons";
-@import "../../src/components/patterns/example/example";
-@import "../../src/components/patterns/feedback/feedback";
-@import "../../src/components/patterns/gallery/gallery";
-@import "../../src/components/patterns/info/info";
-@import "../../src/components/patterns/manifest/manifest";
-@import "../../src/components/patterns/photo/photo";
-@import "../../src/components/patterns/search/search";
+@import "../../src/components/01-base/01-links/links";
+@import "../../src/components/01-base/02-headings/headings";
+@import "../../src/components/01-base/03-lists/lists";
+@import "../../src/components/01-base/04-tables/tables";
+@import "../../src/components/01-base/05-forms/forms";
+@import "../../src/components/02-patterns/01-buttons/buttons";
+@import "../../src/components/02-patterns/02-feedback/feedback";
+@import "../../src/components/02-patterns/03-info/info";
+@import "../../src/components/02-patterns/04-photo/photo";
+@import "../../src/components/03-groups/gallery/gallery";
+@import "../../src/components/03-groups/manifest/manifest";
+@import "../../src/components/03-groups/search/search";
