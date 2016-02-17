@@ -6,13 +6,13 @@ A collection of front-end patterns for [The Session](https://thesession.org/) bu
 
 You’ll need to have [Node](https://nodejs.org/) installed on your local machine. It will need to be at least version five. You can [download the latest stable build from the Node website](https://nodejs.org/).
 
-If you haven't already installed the Fractal command line helper on your machine, do that:
+If you haven’t already installed the Fractal command line helper on your machine, do that:
 
 ```shell
 npm i @frctl/fractal -g
 ```
 
-(If for some reason that doesn’t work, you might have to run with `sudo` in front of it.)
+(If for some reason that doesn’t work, you might have to run the command with `sudo` in front of it.)
 
 If you haven’t already installed the Grunt command line helper on your machine, do that:
 
