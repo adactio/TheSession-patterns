@@ -828,6 +828,41 @@ a.ribbon:active {
     border: none;
   }
 }
+.sharing {
+  line-height: 1;
+  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sharing-link {
+  display: inline-block;
+  width: 1.125em;
+  height: 1.125em;
+  padding: 0.25em;
+  fill: #930;
+}
+.sharing-link:hover, .sharing-link:focus {
+  background-color: #930;
+  fill: #ffffe9;
+}
+
+.sharing-link--twitter {
+  fill: #55acee;
+}
+.sharing-link--twitter:hover, .sharing-link--twitter:focus {
+  background-color: #55acee;
+  fill: #ffffe9;
+}
+
+.sharing-link--facebook {
+  fill: #3b5998;
+}
+.sharing-link--facebook:hover, .sharing-link--facebook:focus {
+  background-color: #3b5998;
+  fill: #ffffe9;
+}
+
 .toggle {
   position: relative;
   display: inline-block;

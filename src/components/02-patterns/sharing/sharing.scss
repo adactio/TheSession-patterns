@@ -1,0 +1,34 @@
+.sharing {
+    line-height: 1;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sharing-link {
+    display: inline-block;
+    width: 1.125em;
+    height: 1.125em;
+    padding: 0.25em;
+    fill: #930;
+    &:hover,
+    &:focus {
+        background-color: #930;
+        fill: $light;
+    }
+}
+.sharing-link--twitter {
+    fill: #55acee;
+    &:hover,
+    &:focus {
+        background-color: #55acee;
+        fill: $light;
+    }
+}
+.sharing-link--facebook {
+    fill: #3b5998;
+    &:hover,
+    &:focus {
+        background-color: #3b5998;
+        fill: $light;
+    }
+}
