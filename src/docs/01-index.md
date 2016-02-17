@@ -1,6 +1,8 @@
 ---
 label: Overview
-title: Welcome to your Component Library
+title: Patterns for The Session
 ---
 
-This is the overview page for your Component Library. It can be edited at `src/docs/01-index.md`.
+This is a collection of the front-end patterns used on [The Session](https://thesession.org).
+
+They've been split up into progressively larger patterns.
