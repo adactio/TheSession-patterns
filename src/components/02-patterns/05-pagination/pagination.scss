@@ -1,0 +1,22 @@
+.pagination {
+    @include constrain;
+    margin-bottom: 2em;
+    overflow: hidden;
+    text-align: center;
+    [rel="prev"] {
+        float: left;
+    }
+    [rel="next"] {
+        float: right;
+    }
+    [rel="prev"]:before,
+    [rel="next"]:before {
+        content: '';
+        margin-left: 0;
+    }
+}
+.pagination + [role="search"] {
+    border-top: 0.125em solid rgba(102,51,0,0.1);
+    margin-top: 2em;
+    padding-top: 2em;
+}

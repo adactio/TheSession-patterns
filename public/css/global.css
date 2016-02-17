@@ -183,11 +183,11 @@ h2 a:visited {
   color: #900;
 }
 
-a[rel="prev"]:before {
+[rel="prev"]:before {
   content: '« ';
 }
 
-a[rel="next"]:before {
+[rel="next"]:before {
   content: '» ';
 }
 
@@ -769,6 +769,31 @@ form[method="post"] input[type="submit"]:invalid.back {
 
 a:hover .photo {
   box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.5);
+}
+
+.pagination {
+  max-width: 800px;
+  max-width: 50em;
+  margin-bottom: 2em;
+  overflow: hidden;
+  text-align: center;
+}
+.pagination [rel="prev"] {
+  float: left;
+}
+.pagination [rel="next"] {
+  float: right;
+}
+.pagination [rel="prev"]:before,
+.pagination [rel="next"]:before {
+  content: '';
+  margin-left: 0;
+}
+
+.pagination + [role="search"] {
+  border-top: 0.125em solid rgba(102, 51, 0, 0.1);
+  margin-top: 2em;
+  padding-top: 2em;
 }
 
 .gallery-item {
