@@ -26,7 +26,7 @@ Then:
 1. Clone this repository into a location of your choosing.
 2. Open the project folder in your command line tool of choice.
 3. Install the dependencies: `npm install`
-4. Run the Grunt tasks with `Grunt` (use `Grunt watch` if you plan to change any patterns).
+4. Run the Grunt tasks with `grunt` (use `grunt watch` if you plan to change any patterns).
 5. Run `fractal start`
 
 You should now be able to open localhost:3000 in a browser to see the pattern library.
