@@ -4,7 +4,7 @@ A collection of front-end patterns for [The Session](https://thesession.org/) bu
 
 ## Installation
 
-You’ll need to have [Node](https://nodejs.org/) installed on your local machine. It will need to be at least version five. You can [download the latest stable build from the Node website](https://nodejs.org/).
+You’ll need to have [Node](https://nodejs.org/) installed on your local machine. It will need to be at least version four. You can [download the latest stable build from the Node website](https://nodejs.org/).
 
 If you haven’t already installed the Fractal command line helper on your machine, do that:
 
