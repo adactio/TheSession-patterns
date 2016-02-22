@@ -1,11 +1,9 @@
 <article class="manifest" aria-labelledby="title">
 <h2 class="manifest-title" id="title">A list of items</h2>
 <ul class="manifest-inventory">
-{{> @manifestitem title="Banish Misfortune" detail="jig" meta="metadata goes here" }}
-{{> @manifestitem title="The Bucks Of Oranmore" detail="reel" meta="metadata goes here" }}
-{{> @manifestitem title="The Boys Of Bluehill" detail="hornpipe" meta="metadata goes here" content="This item has some content in it"}}
-{{> @manifestitem title="The Ballydesmond" detail="polka" meta="metadata goes here" }}
-{{> @manifestitem title="Item title" meta="metadata goes here" }}
+{{#each items}}
+{{> @manifestitem this }}
+{{/each}}
 </ul><!-- /.manifest-inventory -->
 <p><a href="#" rel="next">more…</a></p>
 </article>
