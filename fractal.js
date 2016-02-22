@@ -4,6 +4,11 @@
 var fractal = require('@frctl/fractal');
 
 /*
+ * Add a project title
+ */
+fractal.set('project.title', 'Patterns from The Session');
+
+/*
  * Tell Fractal where to look for components.
  */
 fractal.set('components.path', 'src/components');
