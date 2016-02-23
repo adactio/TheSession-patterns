@@ -1,0 +1,25 @@
+{
+    "context": {
+        "items": [{
+            "title": "Banish Misfortune",
+            "detail": "jig",
+            "meta": "metadata goes here"
+        },{
+            "title": "The Bucks Of Oranmore",
+            "detail": "reel",
+            "meta": "metadata goes here"
+        },{
+            "title": "The Boys Of Bluehill",
+            "detail": "hornpipe",
+            "meta": "metadata goes here",
+            "content": "This item has some content in it"
+        },{
+            "title": "The Ballydesmond",
+            "detail": "polka",
+            "meta": "metadata goes here"
+        },{
+            "title": "Item title",
+            "meta": "metadata goes here"
+        }]
+    }
+}

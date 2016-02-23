@@ -1,5 +1,5 @@
 <div class="gallery">
-<span class="gallery-item">{{> @photo width=300 height=300 }}</span>
-<span class="gallery-item">{{> @photo width=320 height=360 }}</span>
-<span class="gallery-item">{{> @photo width=320 height=240 }}</span>
+{{#each images}}
+<span class="gallery-item">{{> @photo this }}</span>
+{{/each}}
 </div><!-- /.gallery -->
