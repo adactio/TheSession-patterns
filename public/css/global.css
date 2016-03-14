@@ -25,6 +25,10 @@ a, button, input, textarea, select, label, summary {
   touch-action: manipulation;
 }
 
+[tabindex='-1']:focus {
+  outline: none;
+}
+
 .discrete {
   font-size: 13px;
   font-size: 0.8125em;

@@ -19,3 +19,6 @@ figure {
 a, button, input, textarea, select, label, summary {
     touch-action: manipulation;
 }
+[tabindex='-1']:focus {
+    outline: none;
+}
