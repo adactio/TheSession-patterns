@@ -1,15 +1,13 @@
 <div class="toggle">
-<label class="toggle-label button action" for="foo">toggle</label>
-<input class="toggle-input" type="checkbox" id="foo">
-<div class="toggle-content feedback">
+<button class="action" aria-controls="foo">toggle</button>
+<div class="toggle-content feedback" id="foo">
 Peekaboo!
 </div><!-- /.toggle-content.feedback -->
 </div><!-- /.toggle -->
 
 <div class="toggle">
-<label class="toggle-label button action share" for="sharing">share</label>
-<input class="toggle-input" type="checkbox" id="sharing">
-<div class="toggle-content feedback sharing">
+<button class="action share" aria-controls="sharing">share</label>
+<div class="toggle-content feedback sharing" id="sharing">
 {{> @sharing }}
 </div><!-- /.toggle-content.feedback.sharing -->
 </div><!-- /.toggle -->
