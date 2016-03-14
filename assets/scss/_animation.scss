@@ -18,7 +18,7 @@
 }
 
 @include animationkeyframes(swingdown, transform, perspective(100vh) rotate3d(1, 0, 0, -90deg), perspective(100vh));
-.toggle-input:checked + .toggle-content {
+.toggle-content[aria-hidden='false'] {
     transform-origin: center top;
     @include animate(swingdown, 0.15s, 1, normal);
 }

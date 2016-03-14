@@ -141,7 +141,7 @@ small.discrete {
     transform: perspective(100vh);
   }
 }
-.toggle-input:checked + .toggle-content {
+.toggle-content[aria-hidden='false'] {
   transform-origin: center top;
   -webkit-animation-name: swingdown;
   -webkit-animation-duration: 0.15s;
