@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: ['assets/js/*.js', 'src/components/**/*.js'],
-                dest: 'public_html/js/global.js'
+                dest: 'public/js/global.js'
             }
         },
         uglify: {
