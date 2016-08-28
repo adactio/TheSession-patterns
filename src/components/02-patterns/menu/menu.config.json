@@ -1,0 +1,19 @@
+{
+    "context": {
+        "links": [
+            {
+                "url": "/help",
+                "name": "Help"
+            },
+            {
+                "url": "/contact",
+                "name": "Contact"
+            },
+            {
+                "url": "/links",
+                "name": "Links",
+                "active": true
+            }
+        ]
+    }
+}

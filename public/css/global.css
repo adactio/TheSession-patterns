@@ -879,6 +879,52 @@ form[method="post"] input[type="submit"]:invalid.back {
   margin-left: 1em;
 }
 
+.menu {
+  border-top: 1px solid;
+}
+.menu li {
+  list-style: none;
+  border-bottom: 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 0.1875em;
+  line-height: 1;
+}
+.menu a {
+  text-decoration: none;
+  display: block;
+  padding: 0.75em 5%;
+}
+.menu a:link, .menu a:visited {
+  color: #630;
+  color: rgba(102, 51, 0, 0.75);
+}
+.menu a:hover, .menu a:focus {
+  text-decoration: none;
+  outline: none;
+  color: #ffc;
+  color: rgba(255, 255, 204, 0.75);
+  background-color: #963;
+  background-color: rgba(51, 0, 0, 0.25);
+}
+.menu a:active {
+  color: #ffc;
+  color: rgba(255, 255, 204, 0.75);
+  background-color: #300;
+  background-color: rgba(51, 0, 0, 0.75);
+}
+.menu .here a:link, .menu .here a:visited {
+  color: #ffc;
+  color: rgba(255, 255, 204, 0.825);
+  background-color: #630;
+  background-color: rgba(51, 0, 0, 0.5);
+}
+.menu .here a:hover, .menu .here a:focus {
+  color: #ffc;
+  color: rgba(255, 255, 204, 0.825);
+  background-color: #300;
+  background-color: rgba(51, 0, 0, 0.66);
+}
+
 .pagination {
   max-width: 800px;
   max-width: 50em;
