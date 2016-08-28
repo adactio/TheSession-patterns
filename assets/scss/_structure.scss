@@ -1,0 +1,22 @@
+.contents {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.strip {
+    width: 100%;
+    padding: 0.5em 0;
+    min-height: 2em;
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+.main {
+    position: relative;
+    min-height: 100%;
+    margin: 1em 0 4em;
+}
