@@ -879,6 +879,86 @@ form[method="post"] input[type="submit"]:invalid.back {
   margin-left: 1em;
 }
 
+.logo {
+  z-index: 2;
+  position: relative;
+  margin: -1em auto 1em auto;
+  width: 90%;
+  max-width: 240px;
+  max-width: 15em;
+  top: 0;
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.375);
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+}
+.logo:hover, .logo:focus {
+  -webkit-transform: translateY(0.25em);
+  transform: translateY(0.25em);
+}
+.logo .the {
+  vertical-align: text-bottom;
+  display: inline-block;
+  font-size: 12px;
+  font-size: 0.75em;
+  letter-spacing: 0.75em;
+  line-height: 1.5;
+}
+.logo .session {
+  vertical-align: text-top;
+  display: inline-block;
+  letter-spacing: 0.25em;
+  line-height: 1.5;
+  text-indent: 0.225em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+  white-space: nowrap;
+}
+.logo .session:first-letter {
+  float: left;
+  letter-spacing: 0;
+  font-size: 40px;
+  font-size: 2.5em;
+  line-height: 1;
+  margin-top: -0.25em;
+}
+.logo .ribbon {
+  padding: 1.5em 0 0;
+  line-height: 1.5;
+}
+
+@media all and (min-width: 56em) {
+  .logo {
+    position: relative;
+    width: 15%;
+    float: left;
+    left: 5%;
+    top: 0;
+    margin-left: -0.1875em;
+    margin-right: 1em;
+  }
+  .logo .ribbon {
+    /*padding-top: 2.375em;
+    padding-bottom: 1em;*/
+    padding-top: 20%;
+    padding-bottom: 10%;
+  }
+  .logo .the {
+    display: block;
+    text-indent: 1.5em;
+  }
+
+  .logo.sticky {
+    position: fixed;
+  }
+}
+@media all and (min-width: 56em) and (min-height: 40em) {
+  .logo {
+    will-change: transform;
+    position: fixed;
+    top: 3em;
+  }
+}
 .mapping .map-container {
   position: relative;
   overflow: hidden;

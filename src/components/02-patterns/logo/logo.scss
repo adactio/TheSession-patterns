@@ -1,0 +1,80 @@
+.logo {
+    z-index: 2;
+    position: relative;
+    margin: -1em auto 1em auto;
+    width: 90%;
+    max-width: 240px;
+    max-width: 15em;
+    top: 0;
+    box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.375);
+    text: {
+        align: center;
+        transform: uppercase;
+    }
+    @include transition(transform, 0.1s, linear);
+    &:hover,
+    &:focus {
+        @include slide(0.25em, y);
+    }
+    .the {
+        vertical-align: text-bottom;
+        display: inline-block;
+        @include font-size(12);
+        letter-spacing: 0.75em;
+        line-height: 1.5;
+    }
+    .session {
+        vertical-align: text-top;
+        display: inline-block;
+        letter-spacing: 0.25em;
+        line-height: 1.5;
+        text-indent: 0.225em;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.25);
+        white-space: nowrap;
+    }
+    .session:first-letter {
+        float: left;
+        letter-spacing: 0;
+        @include font-size(40);
+        line-height: 1;
+        margin-top: -0.25em;
+    }
+    .ribbon {
+        padding: 1.5em 0 0;
+        line-height: 1.5;
+    }
+}
+
+@media all and (min-width: 56em) {
+    .logo {
+        position: relative;
+        width: 15%;
+        float: left;
+        left: 5%;
+        top: 0;
+        margin-left: -0.1875em;
+        margin-right: 1em;
+
+        .ribbon {
+            /*padding-top: 2.375em;
+            padding-bottom: 1em;*/
+            padding-top: 20%;
+            padding-bottom: 10%;
+        }
+        .the {
+            display: block;
+            text-indent: 1.5em;
+        }
+    }
+    .logo.sticky {
+        position: fixed;
+    }
+}
+
+@media all and (min-width: 56em) and (min-height: 40em) {
+    .logo {
+        will-change: transform;
+        position: fixed;
+        top: 3em;
+    }
+}
