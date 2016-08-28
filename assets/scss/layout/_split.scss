@@ -1,0 +1,23 @@
+@media all and (min-width: 64em) and (min-height: 38em) {
+    .split {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 2em;
+        -moz-column-gap: 2em;
+        column-gap: 2em;
+    }
+    .split li {
+        -webkit-column-break-inside: avoid;
+        -moz-column-break-inside: avoid;
+        column-break-inside: avoid;
+    }
+    ol.split {
+        border-color: transparent;
+        position: relative;
+        left: -4em;
+    }
+    ol.split li {
+        margin-left: 4em;
+    }
+}

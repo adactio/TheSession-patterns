@@ -1,0 +1,28 @@
+@media all and (max-width: 40em) and (max-height: 40em) {
+    .parallel {
+        display: block;
+        width: 100%;
+        overflow: auto;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        border-right: 0.0625em solid rgba(0,0,0,0.025);
+        background-image:
+            radial-gradient(at bottom left, transparent 95%, rgba(0,0,0,0.075)),
+            linear-gradient(225deg, rgba(0,0,0,0.025), transparent 5%),
+            linear-gradient(250deg, rgba(0,0,0,0.025), transparent 10%),
+            linear-gradient(200deg, rgba(0,0,0,0.025), transparent 30%);
+        .parallel-container {
+            display: block;
+            float: left;
+            width: 500%;
+            max-width: 500%;
+        }
+        .parallel-item {
+            box-sizing: border-box;
+            display: block;
+            width: 20%;
+            float: left;
+            padding-right: 1em;
+        }
+    }
+}

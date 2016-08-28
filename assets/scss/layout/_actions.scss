@@ -1,0 +1,15 @@
+.actions {
+    padding: 3.5em 0;
+    .action {
+        margin-bottom: 0.75em;
+    }
+}
+
+@media all and (min-width: 56em) {
+    .actions {
+        position: absolute;
+        top: -2em;
+        right: 5%;
+        padding: 0;
+    }
+}

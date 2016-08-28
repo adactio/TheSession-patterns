@@ -1,0 +1,23 @@
+@media all and (min-width: 48em) {
+    .group {
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        &:after {
+            clear:both;
+        }
+        .primary {
+            position: relative;
+            width: 47.5%;
+            float: left;
+        }
+        .secondary {
+            position: relative;
+            width: 47.5%;
+            float: right;
+        }
+    }
+}
