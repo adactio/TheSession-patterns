@@ -1,0 +1,9 @@
+{
+    "context": {
+        "member": {
+            "id": 1,
+            "name": "Jeremy",
+            "bio": "My name is Jeremy. I’m from the town of Cobh, county Cork but I’m living in Brighton, southern England now."
+        }
+    }
+}

@@ -808,6 +808,60 @@ form[method="post"] input[type="submit"]:invalid.back {
   background-color: #cf9;
 }
 
+.hovercard {
+  max-width: 15em;
+  background-color: #ffffdf;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+  border: 0.1875em double rgba(0, 0, 0, 0.1);
+  border-radius: 0.5em;
+  padding: 0 1em;
+  z-index: 3;
+  transition: opacity .25s, transform 0.25s;
+}
+
+.hovercard.above {
+  -webkit-transform: translateY(-0.5em);
+  transform: translateY(-0.5em);
+}
+
+.hovercard.below {
+  -webkit-transform: translateY(0.5em);
+  transform: translateY(0.5em);
+}
+
+.hovercard.above::after,
+.hovercard.below::after {
+  content: ' ';
+  position: absolute;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #ffffdf;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: calc(50% - 0.25em);
+}
+
+.hovercard.above::after {
+  bottom: -0.5em;
+  border-bottom: 0.1875em double rgba(0, 0, 0, 0.1);
+  border-right: 0.1875em double rgba(0, 0, 0, 0.1);
+}
+
+.hovercard.below::after {
+  top: -0.5em;
+  border-top: 0.1875em double rgba(0, 0, 0, 0.1);
+  border-left: 0.1875em double rgba(0, 0, 0, 0.1);
+}
+
+.hovercard[aria-hidden="true"] {
+  opacity: 0;
+}
+
+.hovercard[aria-hidden="false"] {
+  opacity: 1;
+}
+
 .info {
   width: 100%;
   overflow: auto;
