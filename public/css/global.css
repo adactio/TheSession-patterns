@@ -728,6 +728,17 @@ form[method="post"] input[type="submit"]:invalid.back {
   border-color: #99004d;
 }
 
+.chartbar {
+  display: block;
+  height: 0.5em;
+  background-color: #edc;
+  background-color: rgba(153, 102, 51, 0.125);
+  border-radius: 0.125em;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(153, 102, 51, 0.05)), color-stop(1, rgba(153, 102, 51, 0.2)));
+  background-image: -webkit-linear-gradient(rgba(153, 102, 51, 0.05), rgba(153, 102, 51, 0.2));
+  background-image: linear-gradient(rgba(153, 102, 51, 0.05), rgba(153, 102, 51, 0.2));
+}
+
 .emoticon {
   display: inline-block;
   width: 1em;

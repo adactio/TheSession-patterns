@@ -1,0 +1,8 @@
+.chartbar {
+    display: block;
+    height: 0.5em;
+    background-color: #edc;
+    background-color: rgba(153,102,51,0.125);
+    border-radius: 0.125em;
+    @include gradient(rgba(153,102,51,0.05),rgba(153,102,51,0.2));
+}
