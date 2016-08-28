@@ -1,0 +1,21 @@
+{
+    "context": {
+        "content": "This is a piece of feedback."
+    },
+    "variants": [
+        {
+            "name": "error",
+            "context": {
+                "modifier": "error",
+                "content": "This feedback is an error message."
+            }
+        },
+        {
+            "name": "success",
+            "context": {
+                "modifier": "success",
+                "content": "This feedback message is for success."
+            }
+        }
+    ]
+}

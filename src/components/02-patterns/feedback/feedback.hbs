@@ -1,5 +1,1 @@
-<p class="feedback">This is a piece of feedback.</p>
-
-<p class="feedback error">This feedback is an error message.</p>
-
-<p class="feedback success">This feedback message is for success.</p>
+<p class="feedback{{#if modifier }} {{ modifier }}{{/if}}">{{ content }}</p>
