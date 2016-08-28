@@ -1,0 +1,44 @@
+{
+    "context": {
+        "site": {
+            "links": [
+                {
+                    "url": "/tunes",
+                    "name": "Tunes"
+                },
+                {
+                    "url": "/recordings",
+                    "name": "Recordings"
+                },
+                {
+                    "url": "/sessions",
+                    "name": "Sessions"
+                },
+                {
+                    "url": "/events",
+                    "name": "Events"
+                },
+                {
+                    "url": "/discussions",
+                    "name": "Discussions"
+                }
+            ]
+        },
+        "siteinfo": {
+            "links": [
+                {
+                    "url": "/help",
+                    "name": "Help"
+                },
+                {
+                    "url": "/contact",
+                    "name": "Contact"
+                },
+                {
+                    "url": "/links",
+                    "name": "Links"
+                }
+            ]
+        }
+    }
+}

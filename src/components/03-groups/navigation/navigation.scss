@@ -1,0 +1,184 @@
+.top {
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 0.125em 0.25em rgba(0,0,0,0.25);
+}
+.navigation {
+    position: relative;
+    bottom: 0;
+    min-height: 100%;
+    color: #630;
+    color: rgba(102,51,0,0.9);
+    background-color: #c93;
+    .menu {
+        background-color: #c93;
+        margin: 0;
+    }
+}
+.siteinfo {
+    text-align: center;
+    padding: 2.5em 0 3.5em;
+    .menu {
+        border-bottom: 1px solid;
+        li {
+            display: inline;
+            border-bottom: none;
+        }
+        a {
+            display: inline-block;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }
+}
+
+.bottom {
+    position: relative;
+    bottom: 0;
+    margin-top: -3em;
+    form {
+        display: inline-block;
+    }
+}
+
+
+@media all and (min-width: 44em) {
+    .top [rel="contents"] {
+        display: none;
+    }
+    .navigation {
+        position: static;
+        bottom: auto;
+        min-height: 0;
+        overflow: hidden;
+
+        .menu {
+            border: none;
+            background-color: #600;
+            -webkit-font-smoothing: subpixel-antialiased;
+            li {
+                a:link,
+                a:visited {
+                    color: #ffc;
+                    color: rgba(255,255,204,0.9);
+                }
+                a:hover,
+                a:focus {
+                    background-color: #400;
+                    background-color: rgba(51,0,0,0.25);
+                }
+                a:active {
+                    color: #ffc;
+                    color: rgba(255,255,204,0.825);
+                    background-color: #300;
+                    background-color: rgba(51,0,0,0.5);
+                }
+            }
+            li.here {
+                a:link,
+                a:visited {
+                    color: #ffc;
+                    color: rgba(255,255,204,0.825);
+                    background-color: #300;
+                    background-color: rgba(51,0,0,0.5);
+                }
+                a:hover,
+                a:focus {
+                    color: #ffc;
+                    color: rgba(255,255,204,0.825);
+                    background-color: #200;
+                    background-color: rgba(51,0,0,0.66);
+                }
+            }
+        }
+        .site {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            z-index: 3;
+            top: 0;
+            left: 5%;
+            width: 90%;
+            display: table;
+            @include gradient(#700,#500);
+
+            li {
+                display: table-cell;
+                text-align: center;
+                border: none;
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 1em 0;
+                    border-right: 0.0625em dotted #963;
+                    border-right: 0.0625em dotted rgba(255,255,255,0.25);
+                }
+                &:first-child a {
+                    border-left: 0.0625em dotted #963;
+                    border-left: 0.0625em dotted rgba(255,255,255,0.25);
+                }
+            }
+        }
+    }
+    .siteinfo {
+        padding: 0.5em 0 0;
+        background-color: #600;
+        .menu {
+            border-bottom: none;
+            a {
+                border-radius: 0.25em;
+            }
+        }
+    }
+    .bottom {
+        margin-top: 0;
+        padding-top: 0;
+        min-height: 0;
+        height: 0;
+        form {
+            float: left;
+        }
+        form, a{
+            position: relative;
+            top: -2em;
+            margin-bottom: -2em;
+        }
+    }
+}
+
+@media all and (min-width: 56em) {
+    .navigation .site {
+        left: 20%;
+        width: 76%;
+    }
+    .main  {
+        margin-left: 20%;
+    }
+    .header + .main {
+        margin-top: 5%;
+    }
+}
+
+@media all and (min-width: 56em) and (min-height: 40em) {
+    body {
+        padding-top: 3em;
+    }
+    :target:before {
+        content: '';
+        display: block;
+        height: 3em;
+        margin: -3em 0 0;
+    }
+    .top,
+    .navigation .site {
+        will-change: transform;
+        position: fixed;
+        top: 0;
+    }
+}
+
+@media all and (min-width: 72em) {
+    .navigation .site li {
+        width: 20%;
+    }
+}

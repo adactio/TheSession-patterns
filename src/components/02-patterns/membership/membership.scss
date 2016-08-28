@@ -1,0 +1,44 @@
+.membership {
+    padding-top: 0.35em;
+}
+
+@media all and (min-width: 44em) {
+    .membership {
+        position: absolute;
+        top: 3.6875em;
+        color: #300;
+        color: rgba(51,0,0,0.9);
+        .profile {
+            padding: 0.25em 0.75em 0.1875em;
+            border-radius: 0.25em;
+            @include gradient(rgba(0,0,0,0),rgba(0,0,0,0.2));
+            @include transition (all, 0.1s, linear);
+            @include button($action);
+        }
+    }
+}
+
+@media all and (min-width: 56em) {
+    .membership {
+        position: static;
+        top: auto;
+        width: 16.5%;
+        text-align: center;
+        -webkit-font-smoothing: subpixel-antialiased;
+        background-color: #600;
+        color: #c96;
+        color: rgba(255,255,204,0.5);
+        .profile {
+            padding: 0;
+            border: none;
+            background-image: none;
+            background-color: transparent;
+            color: #ffc;
+            color: rgba(255,255,204,0.9);
+        }
+        .profile:link,
+        .profile:visited {
+            background-color: transparent;
+        }
+    }
+}
