@@ -1,8 +1,7 @@
 <ul class="stats">
 {{#each stats}}
 <li>
-<a class="stat" href="#">{{ this.number }} {{ this.name }}</a>
-<embed class="stat" src="/img/sparkline-min.svg?{{ this.values }}" type="image/svg+xml" width="100" height="15">
+{{> @stat this }}
 </li>
 {{/each}}
 </ul>
