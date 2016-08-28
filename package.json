@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Pattern library for thesession.org",
   "dependencies": {
-    "@frctl/fractal": "^0.6.0"
+    "@frctl/fractal": "^1.0.0"
   },
   "private": true,
   "scripts": {
