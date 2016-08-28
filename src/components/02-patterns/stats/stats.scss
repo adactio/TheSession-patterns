@@ -1,0 +1,12 @@
+.stats {
+    display: table;
+    li {
+        display: table-row;
+    }
+    .stat {
+        display: table-cell;
+    }
+    .stat + .stat {
+        padding-left: 1em;
+    }
+}

@@ -989,6 +989,19 @@ a.ribbon:active {
   fill: #ffffe9;
 }
 
+.stats {
+  display: table;
+}
+.stats li {
+  display: table-row;
+}
+.stats .stat {
+  display: table-cell;
+}
+.stats .stat + .stat {
+  padding-left: 1em;
+}
+
 .toggle {
   position: relative;
   display: inline-block;

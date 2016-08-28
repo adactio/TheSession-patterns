@@ -1,0 +1,5 @@
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="100%" height="100%" onload='draw()'>
+<script><![CDATA[
+function scale(e,t,n){return 100*(n-t)/(e-t)||0}function draw(){var e=document.getElementsByTagName("svg")[0],t=2,n=location.search.substr(1),r=n.split("&"),i=r[0].split(",").map(function(e){return parseFloat(e,10)||0}),s=96,o="rgba(0,0,0,0.5)",u=Math.max.apply(null,i),a=Math.min.apply(null,i);var f=i.map(function(e){return scale(u,a,e)}),l=100/f.length,c=0,h=0,p=l/2,d=s-f[0];for(var v=0;v<f.length;v++){var m=document.createElementNS("http://www.w3.org/2000/svg","line");c=p;h=d;p=s*(v/f.length)+l/2;d=s-f[v];m.setAttribute("x1",c+"%");m.setAttribute("x2",p+"%");m.setAttribute("y1",h+"%");m.setAttribute("y2",d+"%");m.setAttribute("stroke",o);m.setAttribute("stroke-width","1");e.appendChild(m)}}if(typeof Array.prototype.map!=="function"){Array.prototype.map=function(e){for(var t=this,n=t.length,r=[],i=0,s;i<t;)r[i]=i in t?e.call(arguments[1],t[i],i++,t):s;return r}}
+]]></script>
+</svg>
