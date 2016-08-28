@@ -102,6 +102,10 @@
             display: table;
             @include gradient(#700,#500);
 
+            ul {
+                display: table-row;
+            }
+
             li {
                 display: table-cell;
                 text-align: center;
