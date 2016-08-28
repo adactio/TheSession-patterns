@@ -1,0 +1,18 @@
+<li class="manifest-item feed-entry feed-entry--snippet h-entry" itemscope itemtype="http://schema.org/Comment">
+{{#if subject}}
+<a class="p-name" itemprop="name" href="#">{{ subject }}</a>
+{{/if}}
+<p class="e-content" itemprop="articleSection">
+{{ content }}
+<a rel="bookmark" class="u-url" itemprop="url" href="#">more&hellip;</a>
+</p><!-- /.e-content -->
+<small class="discrete">
+Posted by
+<span class="feed-entry-author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+{{> @hovercard this }}
+</span><!-- /.feed-entry-author.p-author.h-card -->
+<time class="dt-published" itemprop="datePublished" datetime="{{ date }}">
+{{ time }}
+</time>.
+</small><!-- /.discrete -->
+</li><!-- /.manifest-item.parallel-item.feed-entry--snippet.h-entry. itemscope:Article -->

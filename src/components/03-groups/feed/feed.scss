@@ -1,0 +1,27 @@
+.feed-entry {
+    @include constrain;
+    list-style: none;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.4375em;
+    border-bottom: 0.0625em solid rgba(0,0,0,0.025);
+}
+.feed-entry-title {
+    margin-bottom: 0;
+    border-bottom-width: 0;
+}
+.feed-entry-author {
+    word-wrap: break-word;
+}
+.feed-entry-author a:link,
+.feed-entry-author a:visited {
+    color: #c30;
+}
+.feed-entry--snippet {
+    p {
+        margin: 0;
+    }
+}
+.feed-entry--comment .feed-entry-title {
+    color: #960;
+    margin-top: 0;
+}
