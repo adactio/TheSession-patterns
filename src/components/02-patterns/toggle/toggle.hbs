@@ -1,13 +1,13 @@
 <div class="toggle">
-<button class="action" aria-controls="foo">toggle</button>
-<div class="toggle-content feedback" id="foo">
+<a href="#foo" class="button action" aria-controls="foo" aria-expanded="false">toggle</a>
+<div class="toggle-content feedback" id="foo" aria-hidden="true">
 Peekaboo!
 </div><!-- /.toggle-content.feedback -->
 </div><!-- /.toggle -->
 
 <div class="toggle">
-<button class="action share" aria-controls="sharing">share</label>
-<div class="toggle-content feedback sharing" id="sharing">
+<a href="#sharing" class="button action share" aria-controls="sharing" aria-expanded="false">share</a>
+<div class="toggle-content feedback sharing" id="sharing" aria-hidden="true">
 {{> @sharing }}
 </div><!-- /.toggle-content.feedback.sharing -->
 </div><!-- /.toggle -->
